@@ -1,0 +1,712 @@
+/*font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /*text-align: center;*/
+}
+
+/* Style the header */
+.top-container {
+  background-color: #932432;
+  color: #fff;
+  text-align: left;
+}
+
+#title {
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 100px 80px 220px;
+}
+
+.container-fluid {
+  padding: 100px 80px;
+}
+
+/*navigation bar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding-right: 140px;
+  padding-bottom: 72px;
+  padding-left: 0;
+}
+
+.nav-scrolled {
+  background-color: #3C1874;
+  padding: 15px 140px 0 15px;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+}
+
+.navbar-brand.navbar-logo:before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  width: 322px;
+  height: 3px;
+  background-color: #3C1874;
+  transform: translateX(-50%);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 20px;
+  padding-right: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #F3F3F3;
+  border-bottom: 2px solid #F3F3F3;
+  transition: all 0.3s ease-in-out;
+  background-color: #932432;
+}
+
+.dropdown-menu {
+  background-color: #932432;
+  color: #fff;
+}
+
+.dropdown-scrolled-menu {
+  background-color: #3C1874;
+}
+
+.dropdown-scrolled-menu:hover {
+  color: #fff;
+  background-color: #3C1874;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  color: #F3F3F3;
+  background-color: #932432;
+}
+
+.title-subsection {
+  position: relative;
+  top: 145px;
+}
+
+.title-img {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.big-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  padding-top: 100px;
+}
+
+.small-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.appointment-btn {
+  padding: 10px 10px;
+  margin: 10px 15px 40px 0;
+  background-color: #3C1874;
+  border-color: #932432;
+  color: #fff;
+}
+
+.appointment-btn:hover {
+  background-color: transparent;
+  color: #fff;
+  border-color: #3C1874;
+}
+
+/*middle- section */
+.middle-container {
+  background-color: #F3F3F3;
+  z-index: 1;
+  position: relative;
+}
+
+.middle-container .about-section,
+.bottom-container .bottom-section,
+.footer-container .footer-section,
+.form-container .view_product_section,
+.form-container .login-form-section,
+.form-container .product-form-section,
+.form-container .registration-form-section,
+.form-container .customer-order-section,
+.form-container .admin-form-section {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.middle-container .About-title,
+.bottom-container .bottom-title,
+.form-container .add_product_title,
+.form-container .login_page_title,
+.form-container .registration_title,
+.form-container .update_product_title,
+.form-container .add_city_title,
+.form-container .customer_order_title,
+.middle-container .view_product_title {
+  margin: 0 auto 70px;
+  font-size: 45px;
+  font-weight: 600;
+  color: #283747;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 2px solid #3C1874;
+  width: 125px;
+  transition: all 0.2s ease;
+}
+
+.middle-container .About-title:hover {
+  border-bottom: 4px solid #3C1874;
+}
+
+.bottom-container .bottom-title:hover {
+  border-bottom: 4px solid #3C1874;
+}
+
+.form-container .add_product_title:hover {
+  border-bottom: 4px solid #3C1874;
+}
+
+.form-container .registration_title:hover {
+  border-bottom: 4px solid #3C1874;
+}
+
+.form-container .login_page_title:hover {
+  border-bottom: 4px solid #3C1874;
+}
+
+.form-container .update_product_title:hover {
+  border-bottom: 4px solid #3C1874;
+}
+
+.form-container .add_city_title:hover {
+  border-bottom: 4px solid #3C1874;
+}
+
+.form-container .customer_order_title:hover {
+  border-bottom: 4px solid #3C1874;
+}
+
+.middle-container .medicine-img {
+  height: 400px;
+  width: 400px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.middle-container .medicine-content {
+  padding: 15px 10px 15px 120px;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Bottom Container */
+.bottom-container {
+  background-color: #932432;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.bottom-container .bottom-title {
+  width: 160px;
+  color: #fff;
+}
+
+.bottom-container .contact-box {
+  padding: 30px 110px;
+}
+
+.bottom-container .contact-box a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bottom-container .font-icon {
+  margin-bottom: 16px;
+}
+
+.bottom-container .font-icon:hover {
+  color: #3C1874;
+}
+
+.bottom-container .bottom-title h2 {
+  text-align: center;
+}
+
+/* Footer Section */
+.footer-container {
+  background-color: #F3F3F3;
+  position: relative;
+  text-align: center;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-container .social-icon {
+  padding: 13px 13px;
+  border: 2px solid #3C1874;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.footer-container .social-icon.fb-icon {
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.footer-container .social-icon.ld-icon {
+  padding: 13px 15px;
+  transition: all 0.3s ease;
+}
+
+.footer-container .social-icon:hover {
+  background-color: #3C1874;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer-container .Copyright {
+  color: #283747;
+  font-size: 14px;
+}
+
+/*user-registration-page-css*/
+.registration-form-section .container-fluid {
+  padding: 100px 350px;
+}
+
+.customer-order-section .container-fluid {
+  padding: 100px 350px;
+}
+
+.form-container .registration_title {
+  width: 375px;
+  margin: 0 0 70px 20px;
+  transition: all 0.2s ease;
+}
+
+.form-container .customer_order_title {
+  width: 375px;
+  margin: 0 0 70px 20px;
+  transition: all 0.2s ease;
+}
+
+/* user-login-page-css*/
+.form-container {
+  background-color: #adac8570;
+  position: relative;
+  z-index: 1;
+}
+
+.login-form-section .container-fluid {
+  padding: 100px 350px;
+}
+
+.form-container .login_page_title {
+  width: 260px;
+  margin: 0 0 70px 20px;
+}
+
+.login-form-section .sign-up-link {
+  color: #932432;
+}
+
+.login-form-section .sign-up-link:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+/*user-add-product-page*/
+.product-form-section .container-fluid {
+  padding: 100px 200px;
+  ;
+}
+
+.form-container .add_product_title {
+  width: 370px;
+  margin: 0 0 70px 20px;
+  transition: all 0.2s ease;
+}
+
+.form-container .form-div a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*user-view-product-page*/
+.middle-container .view_product_title {
+  width: 350px;
+}
+
+.middle-container .medicine-img {
+  width: 250px;
+  height: 250px;
+}
+
+.view_product_section .container-fluid {
+  padding: 100px 80px 0;
+  background-color: #adac8570;
+}
+
+hr {
+  margin: auto;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3C1874;
+  border-bottom: none;
+  width: 100%;
+  background-color: #F3F3F3;
+}
+
+/*user view product edit page */
+.form-container .update_product_title {
+  width: 330px;
+  margin: 0 0 70px 20px;
+  transition: all 0.2s ease;
+}
+
+/* addmin page css */
+.admin-form-section .container-fluid {
+  padding: 100px 350px;
+}
+
+.form-container .add_city_title {
+  width: 178px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 1200px) {
+  .middle-container .medicine-img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .middle-container .medicine-content {
+    padding: 0 0 0 164px;
+  }
+
+  .bottom-container .contact-box {
+    padding: 30px 77px;
+  }
+
+  .registration-form-section .container-fluid {
+    padding: 100px 200px;
+  }
+
+  .product-form-section .container-fluid {
+    padding: 100px 60px;
+  }
+
+  .login-form-section .container-fluid,
+  .admin-form-section .container-fluid {
+    padding: 100px 300px;
+  }
+
+  .customer-order-section .container-fluid {
+    padding: 100px 200px;
+  }
+
+  .form-container .login_page_title {
+    width: 230px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title-img {
+    /*position: static;*/
+    position: relative;
+    right: 80px;
+  }
+
+  .big-heading {
+    text-align: center;
+  }
+
+  .title-subsection {
+    text-align: center;
+  }
+
+  #collapsibleNavbar {
+    background-color: #333;
+    color: #fff;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .middle-container .medicine-img {
+    margin: 10px auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .middle-container .medicine-content {
+    padding: 0 10px 0 15px;
+    margin: 10px 2px;
+    text-align: justify;
+  }
+
+  .registration-form-section .container-fluid {
+    padding: 100px 100px;
+  }
+
+  .form-container .registration_title {
+    font-size: 30px;
+    width: 250px;
+  }
+
+  .product-form-section .container-fluid {
+    padding: 100px 7px 100px 65px;
+  }
+
+  .login-form-section .container-fluid,
+  .admin-form-section .container-fluid {
+    padding: 100px 200px;
+  }
+
+  .login-form-section .sign_up_text {
+    font-size: 12px;
+  }
+
+  .customer-order-section .container-fluid {
+    padding: 100px 100px;
+  }
+
+  .form-container .customer_order_title {
+    font-size: 30px;
+    width: 225px;
+  }
+
+  .form-container .update_product_title {
+    font-size: 30px;
+    width: 215px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-img {
+    width: 90%;
+    position: relative;
+    right: 62px;
+  }
+
+  .middle-container .medicine-img {
+    height: 350px;
+    width: 350px;
+    margin: 10px auto;
+  }
+
+  .middle-container .medicine-content {
+    margin: 10px auto;
+    text-align: justify;
+  }
+
+  .product-form-section .container-fluid {
+    padding: 100px 7px 100px 65px;
+  }
+
+  .form-container .add_product_title {
+    font-size: 30px;
+    width: 250px;
+  }
+
+  .login-form-section .container-fluid,
+  .admin-form-section .container-fluid {
+    padding: 100px 100px;
+  }
+
+  .form-container .login_page_title {
+    font-size: 30px;
+    width: 160px;
+  }
+
+  .form-container .add_city_title {
+    font-size: 30px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding-right: 120px;
+  }
+
+  .navbar-brand {
+    font-size: 22px;
+  }
+
+  .title-img {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: -50px;
+  }
+
+  .big-heading {
+    text-align: center;
+    font-size: 60px;
+    padding-top: 0;
+    line-height: 1.5;
+  }
+
+  .appointment-btn {
+    padding: 10px 15px;
+    background-color: #3C1874;
+    border-color: #932432;
+    color: #fff;
+  }
+
+  .middle-container .medicine-img {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+  }
+
+  .middle-container .medicine-content {
+    padding: 0 5px 0 17px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  .middle-container .medicine-content h2 {
+    font-size: 1.7rem;
+    padding: 15px 0;
+    border-bottom: 2px solid black;
+    width: 190px;
+  }
+
+  .middle-container .medicine-content p {
+    margin-top: 17px;
+  }
+
+  .navbar-brand.navbar-logo:before {
+    width: 187px;
+  }
+
+  .registration-form-section .container-fluid {
+    padding: 100px 50px 100px 80px;
+  }
+
+  .login-form-section .container-fluid,
+  .admin-form-section .container-fluid {
+    padding: 100px 70px;
+  }
+
+  .customer-order-section .container-fluid {
+    padding: 100px 50px 100px 80px;
+  }
+
+  .product-form-section .container-fluid {
+    padding: 100px 7px 100px 65px;
+  }
+
+  .form_container .input_button {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .view_product_section .medicine-content h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .title-img {
+    position: relative;
+    left: -75px;
+  }
+
+  .appointment-btn {
+    font-size: 12px;
+  }
+
+  .middle-container .container-fluid {
+    padding: 100px 30px 100px 80px;
+  }
+
+  .form-container .registration_title {
+    font-size: 25px;
+    width: 205px;
+  }
+
+  .form-container .add_product_title {
+    font-size: 25px;
+    width: 205px;
+  }
+
+  .view_product_section .container-fluid {
+    padding: 100px 30px 100px 80px;
+  }
+
+  .view_product_section .medicine-content h3 {
+    font-size: 20px;
+  }
+
+  .form-container .update_product_title {
+    font-size: 25px;
+    width: 190px;
+  }
+
+  .middle-container .medicine-img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .form-container .customer_order_title {
+    font-size: 25px;
+    width: 190px;
+  }
+
+  .form_container .input_button {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
