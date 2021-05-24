@@ -42,7 +42,7 @@ if(isset($_POST["submit"])){
             <div class="col-md-12 mb-3">
               <div class="form-group">
                 <label for="name">Name:</label>
-      				  <input type="text" id="name" name="name" value="" class="form-control" required/>
+      		<input type="text" id="name" name="name" value="" class="form-control" required/>
               </div>
             </div>
             <div class="col-md-12 mb-3">
@@ -90,7 +90,7 @@ if(isset($_POST["submit"])){
             </div>
             <div class="col-md-12">
               <div class="form-group">
-      				  <input type="submit" class="btn btn-success btn-block" name= "submit" value="SUBMIT" />
+      		<input type="submit" class="btn btn-success btn-block" name= "submit" value="SUBMIT" />
               </div>
             </div>
       	</form>
