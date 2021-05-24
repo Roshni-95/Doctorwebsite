@@ -36,7 +36,7 @@ if(isset($_POST['login'])){
           <div class="row">
             <div class="col-md-12 mb-3">
               <div class="form-group">
-      				 <input type="email"class="form-control form-control-lg form-control-a" name="admin_email" id="admin_email" value="" placeholder="Your Email"  />
+      	        <input type="email"class="form-control form-control-lg form-control-a" name="admin_email" id="admin_email" value="" placeholder="Your Email"  />
               </div>
             </div>
             <div class="col-md-12 mb-3">
@@ -46,10 +46,10 @@ if(isset($_POST['login'])){
             </div>
           </div>
             <div class="col-md-12">
-							<div class="form-group">
-      				 <input type="submit" class="btn btn-success btn-block" name= "login" value="LOGIN" />
-            	</div>
-						</div>
+	      <div class="form-group">
+      		<input type="submit" class="btn btn-success btn-block" name= "login" value="LOGIN" />
+              </div>
+	    </div>
       	</form>
       </div>
     </div>
